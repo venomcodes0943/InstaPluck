@@ -1,29 +1,24 @@
 import { useState } from "react";
-import Navbar from "./Navbar"
-import InputCard from "./InputCard"
-import InstaReelViewer from "./InstaReelViewer"
+import Navbar from "./Navbar";
+import InputCard from "./InputCard";
+import InstaReelViewer from "./InstaReelViewer";
 
 function App() {
-  const [url, setUrl] = useState('');
-  const [videoUrl, setVideoUrl] = useState('');
+  const [url, setUrl] = useState("");
+  const [videoUrl, setVideoUrl] = useState("");
 
   const handleDownload = () => {
     setVideoUrl(url);
-    setUrl(() => '')
+    setUrl(() => "");
   };
 
   return (
     <>
       <Navbar />
-      <InputCard
-        url={url}
-        onUrlChange={setUrl}
-        onDownload={handleDownload}
-      />
-
+      <InputCard url={url} onUrlChange={setUrl} onDownload={handleDownload} />
       <InstaReelViewer requestUrl={videoUrl} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
