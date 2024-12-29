@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const InputCard = ({ url, onUrlChange, onDownload }) => {
   return (
-    <div className="card w-full md:w-[670px] mt-12 mx-auto shadow-md px-2 md:px-4 py-3 md:py-6 ">
+    <div className="card border border-slate-600 w-full md:w-[670px] mt-12 mx-auto shadow-md px-2 md:px-4 py-3 md:py-6 ">
       <input
         value={url}
         onChange={(e) => onUrlChange && onUrlChange(e.target.value)}

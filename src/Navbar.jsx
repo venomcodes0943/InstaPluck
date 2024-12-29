@@ -33,7 +33,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="max-h-44 overflow-auto dropdown-content menu bg-base-100 rounded z-[1] w-52 p-2 shadow"
+            className="max-h-48 overflow-auto dropdown-content menu bg-base-100 rounded z-[1] w-52 p-2 shadow"
           >
             <div className="block">
               {mythemes.map((theme) => (
